@@ -1,0 +1,20 @@
+
+
+<div class="container">
+  <h1>Carrito</h1>
+  <ul class="cart-list">
+    {{#each cart.products}}
+      <li class="cart-item">
+        <h4>{{this.product.title}}</h4>
+        <p class="quantity">Cantidad: {{this.quantity}}</p>
+        <div class="actions">
+          <button onclick="removeFromCart('{{this.product._id}}')">Eliminar</button>
+          <button onclick="updateQuantity('{{this.product._id}}')">Actualizar Cantidad</button>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+  <button onclick="clearCart()">Vaciar Carrito</button>
+</div>
+
+

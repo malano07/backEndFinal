@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: #20CEF0;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  main {
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+ 
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .product-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    color: #19AD73;
+  }
+  
+  .product-card button {
+    background: #FF3E6A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background: #FC9B32;
+  }
+  
+ 
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item h4 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .cart-item .quantity {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .cart-item .actions button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .cart-item .actions button:hover {
+    background: #555;
+  }
+  
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
